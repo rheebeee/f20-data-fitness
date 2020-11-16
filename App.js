@@ -8,6 +8,7 @@ export default function App() {
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
       <Button title="Login" onPress={() => alert('Hi')}/>
+      <Image source={require('./assets/logo.png')} />
     </View>
     
   );
