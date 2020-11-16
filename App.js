@@ -8,7 +8,7 @@ export default function App() {
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
       <Button title="Login" onPress={() => alert('Hi')}/>
-      <Image source={require('./assets/logo.png')} />
+      <Image style={styles.logo} source={require('./assets/logo.png')} />
     </View>
     
   );
@@ -20,6 +20,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',   
+  },
+  logo: {
+    width: 50,
+    height: 50,
   },
 });
 
