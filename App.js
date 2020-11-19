@@ -14,28 +14,22 @@ export default function App() {
         
         <Image style= {styles.logo} source= {require('./assets/logo.png')} />
           
-        <Text>
-        Username:
-        Password:
-        </Text>
           <TextInput
             
             style={styles.text}
-            placeholder="email"
+            placeholder="Email"
             onChangeText={() => setText("Hi")} 
+            
           />
           <TextInput
             style={styles.text}
-            placeholder="password"
+            placeholder="Password"
             onChangeText={() => setText("Hi")} 
           />
 
-      </ImageBackground>
-
-     
-
-      <Button
+<Button
       title= "Login"
+      
       onPress= {() => 
       Alert.alert("My title", "Message", [
 
@@ -45,11 +39,28 @@ export default function App() {
 
       }
       />
+
+    <Button
+      title= "Sign Up"
+      onPress= {() => 
+      Alert.alert("My title", "Message", [
+
+        {text: "Yes", onPress: () => console.log("Yes")},
+        {text: "No"},
+      ]) 
+
+      }
+      />  
+
+      </ImageBackground>
+
+     
+
+      
     </View>
     
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -57,13 +68,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',   
   },
   logo: {
-    width: 50,
-    height: 50,
+    width: 90,
+    height: 90,
+    marginBottom: 50,
+    marginLeft: 140
     
   },
   text:{
-    width:200,
-    height: 40,
+    marginTop: 20,
+    marginLeft:70,
+    marginBottom: 20,
+    fontWeight: "bold",
+    width:220,
+    height: 60,
     borderBottomWidth: 10, 
     borderColor: '#fff', 
     borderWidth: 2, 
@@ -72,9 +89,8 @@ const styles = StyleSheet.create({
     padding:10,
   },
   background:{
-    width:380,
-    height:600,
-    resizeMode: 'cover',
+    width: "100%",
+    height:"100%",
     justifyContent: 'center'
     
   },
@@ -82,7 +98,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 70,
     
-  }
+  },
 });
 
 
