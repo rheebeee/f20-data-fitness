@@ -8,7 +8,11 @@ export default class Info extends React.Component {
         <View style={styles.container}>
           <Text>Body Information.</Text>
           <StatusBar style="auto" />
-          
+          <TextInput
+      style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
+      onChangeText={text => onChangeText(text)}
+      value={value}
+    />
           <Image style={styles.logo} source={require('./assets/logo.png')} />
 
       </View>
