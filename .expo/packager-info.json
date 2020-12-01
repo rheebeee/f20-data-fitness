@@ -1,10 +1,10 @@
 {
-  "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 2804,
   "expoServerNgrokUrl": "https://5k-brd.anonymous.f20-data-fitness.exp.direct",
   "packagerNgrokUrl": "https://packager.5k-brd.anonymous.f20-data-fitness.exp.direct",
-  "ngrokPid": 2825,
-  "webpackServerPort": null
+  "ngrokPid": 4803,
+  "packagerPort": 19003,
+  "packagerPid": 4793,
+  "webpackServerPort": null,
+  "devToolsPort": 19002
 }
